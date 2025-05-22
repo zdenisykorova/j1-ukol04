@@ -12,7 +12,7 @@ public class Sportka {
     private final List<Integer> osudi = new ArrayList<>();
 
     public Sportka() {
-        //TODO naplnit osudí čísly 1 až 49.
+        //naplnit osudí čísly 1 až 49.
         //zkouška interval
         for (int i = 0; i <= 49; i++) {
             osudi.add(i);
@@ -25,10 +25,7 @@ public class Sportka {
      * @see Collections#shuffle(List)
      */
     public void zamichej() {
-        //TODO zamíchat osudí
-        //sort a reverse se mi nabízejí???
-        //Collections.sort(osudi);
-        //Collections.reverse(osudi);
+        //zamíchat osudí
         Collections.shuffle(osudi);  //Randomly permutes the specified list using a default source of randomness.
     }
 
@@ -39,11 +36,8 @@ public class Sportka {
      * @see List#subList(int, int)
      */
     public List<Integer> dejVylosovanaCisla() {
-        //TODO Vrátit seznam prvních 6 čísel z osudí.
-        //for (int i = 0; i < 6; i++) {
-            //osudi.get(i % 6);
-        //}
-        return osudi.subList(0, 6); //možná 1-7 nebo 0-6
+        //Vrátit seznam prvních 6 čísel z osudí.
+        return osudi.subList(0, 6); //možná 1-7 nebo 0-6?   podle instukcí - Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
         }
 
     /**
@@ -53,6 +47,6 @@ public class Sportka {
      */
     public Integer dejDodatkoveCislo() {
         //
-        return osudi.get(7); //pořadí možná 6
+        return osudi.get(6); //jestli první prvek má pozici 0, potom sedmý prvek má pozici 6
         }
 }
