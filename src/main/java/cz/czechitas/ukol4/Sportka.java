@@ -37,7 +37,7 @@ public class Sportka {
      */
     public List<Integer> dejVylosovanaCisla() {
         //Vrátit seznam prvních 6 čísel z osudí.
-        return osudi.subList(0, 6); //možná 1-7 nebo 0-6?   podle instukcí - Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+        return osudi.subList(0, 6); //Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
         }
 
     /**
@@ -46,7 +46,7 @@ public class Sportka {
      * @return Dodatkové číslo.
      */
     public Integer dejDodatkoveCislo() {
-        //
+
         return osudi.get(6); //jestli první prvek má pozici 0, potom sedmý prvek má pozici 6
         }
 }
